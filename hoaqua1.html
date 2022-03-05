@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="select1">
+        <option value="Oi" id="a">Ổi</option>
+        <option value="DuaHau" id="b">Dưa hấu</option>
+        <option value="Tao" id="c">Táo</option>
+        <option value="Xoai" id="d">Xoài</option>
+        <option value="cam" id="e">Cam</option>
+        <option value="ChomChom" id="f">Chôm chôm</option>
+        <option value="MangCut" id="g">Măng Cụt</option>
+    </select>
+
+    <button onclick="here()">Xem giá</button>
+    <h1 id="gia">Gía là</h1>
+    <script>
+        function here() {
+            let sl = document.getElementById("select1").value;
+            let oi = document.getElementById("a").value;
+            let duahau = document.getElementById("b").value;
+            let tao = document.getElementById("c").value;
+            let xoai = document.getElementById("d").value;
+            let cam = document.getElementById("e").value;
+            let chomchom = document.getElementById("f").value;
+            let mangcut = document.getElementById("g").value;
+            if (sl == oi) {
+                document.getElementById("gia").innerHTML = "20000 VND/kg";
+            }
+            if (sl == duahau) {
+                document.getElementById("gia").innerHTML = "20000 VND/kg";
+            }
+            if (sl == tao) {
+                document.getElementById("gia").innerHTML = "30000 VND/kg";
+            }
+            if (sl == xoai) {
+                document.getElementById("gia").innerHTML = "30000 VND/kg";
+            }
+            if (sl == cam) {
+                document.getElementById("gia").innerHTML = "40000 VND/kg";
+            }
+            if (sl == chomchom) {
+                document.getElementById("gia").innerHTML = "40000 VND/kg";
+            }
+            if (sl == mangcut) {
+                document.getElementById("gia").innerHTML = "50000 VND/kg";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
